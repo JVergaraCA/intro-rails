@@ -1,0 +1,323 @@
+Started GET "/" for 127.0.0.1 at 2017-04-03 00:07:03 -0300
+  
+PG::ConnectionBad (could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?
+):
+  
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.6ms)
+  Rendering /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.6ms)
+Started GET "/" for 127.0.0.1 at 2017-04-03 00:08:30 -0300
+  
+PG::ConnectionBad (FATAL:  no existe la base de datos «intro_rails_development»
+):
+  
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.8ms)
+  [1m[35m (119.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (113.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2380616161322225925);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-04-03 03:08:52 UTC], ["updated_at", 2017-04-03 03:08:52 UTC]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(2380616161322225925)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 127.0.0.1 at 2017-04-03 00:09:31 -0300
+Processing by LandingsController#z as HTML
+Completed 500 Internal Server Error in 285ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `nombre1' for #<LandingsController:0x000000036146c8>):
+  
+app/controllers/landings_controller.rb:10:in `z'
+  Rendering /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendering /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/cpozo/.rvm/gems/ruby-2.3.1/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (131.2ms)
+Started GET "/" for 127.0.0.1 at 2017-04-03 00:10:06 -0300
+Processing by LandingsController#z as HTML
+  Rendering landings/z.html.erb within layouts/application
+  Rendered landings/z.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 2133ms (Views: 2130.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 00:10:36 -0300
+Processing by LandingsController#z as HTML
+  Rendering landings/z.html.erb within layouts/application
+  Rendered landings/z.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 74ms (Views: 70.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 00:10:49 -0300
+Processing by LandingsController#z as HTML
+  Rendering landings/z.html.erb within layouts/application
+  Rendered landings/z.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 72ms (Views: 70.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 00:12:56 -0300
+Processing by LandingsController#z as HTML
+  Rendering landings/z.html.erb within layouts/application
+  Rendered landings/z.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 51ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 00:13:06 -0300
+Processing by LandingsController#z as HTML
+  Rendering landings/z.html.erb within layouts/application
+  Rendered landings/z.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 00:16:57 -0300
+Processing by LandingsController#z as HTML
+  Rendering landings/z.html.erb within layouts/application
+  Rendered landings/z.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-03 00:16:58 -0300
+Processing by LandingsController#z as HTML
+  Rendering landings/z.html.erb within layouts/application
+  Rendered landings/z.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/z" for 127.0.0.1 at 2017-04-03 00:17:10 -0300
+Processing by LandingsController#z as HTML
+  Rendering landings/z.html.erb within layouts/application
+  Rendered landings/z.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/x" for 127.0.0.1 at 2017-04-03 00:17:15 -0300
+Processing by LandingsController#x as HTML
+  Rendering landings/x.html.erb within layouts/application
+  Rendered landings/x.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/y" for 127.0.0.1 at 2017-04-03 00:17:19 -0300
+Processing by LandingsController#y as HTML
+  Rendering landings/y.html.erb within layouts/application
+  Rendered landings/y.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/y" for 127.0.0.1 at 2017-04-03 00:21:19 -0300
+Processing by LandingsController#y as HTML
+  Rendering landings/y.html.erb within layouts/application
+  Rendered landings/y.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/y" for 127.0.0.1 at 2017-04-03 00:22:40 -0300
+Processing by LandingsController#y as HTML
+  Rendering landings/y.html.erb within layouts/application
+  Rendered landings/y.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/y" for 127.0.0.1 at 2017-04-03 00:22:43 -0300
+Processing by LandingsController#y as HTML
+  Rendering landings/y.html.erb within layouts/application
+  Rendered landings/y.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/z" for 127.0.0.1 at 2017-04-03 00:22:45 -0300
+Processing by LandingsController#z as HTML
+  Rendering landings/z.html.erb within layouts/application
+  Rendered landings/z.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/x" for 127.0.0.1 at 2017-04-03 00:22:46 -0300
+Processing by LandingsController#x as HTML
+  Rendering landings/x.html.erb within layouts/application
+  Rendered landings/x.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/y" for 127.0.0.1 at 2017-04-03 00:22:47 -0300
+Processing by LandingsController#y as HTML
+  Rendering landings/y.html.erb within layouts/application
+  Rendered landings/y.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/z" for 127.0.0.1 at 2017-04-03 00:22:48 -0300
+Processing by LandingsController#z as HTML
+  Rendering landings/z.html.erb within layouts/application
+  Rendered landings/z.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/y" for 127.0.0.1 at 2017-04-03 00:22:48 -0300
+Processing by LandingsController#y as HTML
+  Rendering landings/y.html.erb within layouts/application
+  Rendered landings/y.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 48ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/x" for 127.0.0.1 at 2017-04-03 00:22:50 -0300
+Processing by LandingsController#x as HTML
+  Rendering landings/x.html.erb within layouts/application
+  Rendered landings/x.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 51ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/x" for 127.0.0.1 at 2017-04-03 00:23:17 -0300
+Processing by LandingsController#x as HTML
+  Rendering landings/x.html.erb within layouts/application
+  Rendered landings/x.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/x" for 127.0.0.1 at 2017-04-03 00:23:53 -0300
+Processing by LandingsController#x as HTML
+  Rendering landings/x.html.erb within layouts/application
+  Rendered landings/x.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/z" for 127.0.0.1 at 2017-04-03 00:23:56 -0300
+Processing by LandingsController#z as HTML
+  Rendering landings/z.html.erb within layouts/application
+  Rendered landings/z.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 50ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/y" for 127.0.0.1 at 2017-04-03 00:23:57 -0300
+Processing by LandingsController#y as HTML
+  Rendering landings/y.html.erb within layouts/application
+  Rendered landings/y.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 38.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/landings/x" for 127.0.0.1 at 2017-04-03 00:23:59 -0300
+Processing by LandingsController#x as HTML
+  Rendering landings/x.html.erb within layouts/application
+  Rendered landings/x.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
